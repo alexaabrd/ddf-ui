@@ -130,7 +130,7 @@ const MultiSelectActions = ({
         <MoreIcon className="Mui-text-text-primary" />
       </Button>
       <Popover {...metacardInteractionMenuState.MuiPopoverProps}>
-        <Paper>
+        <Paper className="py-3">
           <LazyMetacardInteractions
             lazyResults={selectedResultsArray}
             onClose={metacardInteractionMenuState.handleClose}
@@ -167,7 +167,7 @@ const DynamicActions = ({ lazyResult }: { lazyResult: LazyQueryResult }) => {
           {...metacardInteractionMenuState.MuiPopoverProps}
           keepMounted={true}
         >
-          <Paper>
+          <Paper className="py-3">
             <LazyMetacardInteractions
               lazyResults={[lazyResult]}
               onClose={metacardInteractionMenuState.handleClose}

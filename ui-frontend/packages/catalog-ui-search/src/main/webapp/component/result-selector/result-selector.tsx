@@ -61,7 +61,7 @@ const SelectedResults = ({ selectionInterface }: any) => {
         </div>
       </Button>
       <Popover {...MuiPopoverProps} keepMounted={true}>
-        <Paper>
+        <Paper className="py-3">
           <LazyMetacardInteractions
             lazyResults={selectedResultsArray}
             onClose={handleClose}

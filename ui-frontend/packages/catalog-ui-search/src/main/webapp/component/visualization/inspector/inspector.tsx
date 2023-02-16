@@ -84,7 +84,7 @@ export const TitleView = ({ lazyResult }: TitleViewType) => {
         <MoreVertIcon />
       </Button>
       <Popover {...menuState.MuiPopoverProps} keepMounted={true}>
-        <Paper elevation={Elevations.overlays}>
+        <Paper elevation={Elevations.overlays} className="py-3">
           <LazyMetacardInteractions
             lazyResults={[lazyResult]}
             onClose={menuState.handleClose}
